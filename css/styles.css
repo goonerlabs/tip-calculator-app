@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: var(--Light-grayish-cyan);
+}
+
+/* variables */
+:root {
+  /* Primary */
+
+  --Strong-cyan: hsl(172, 67%, 45%);
+
+  /* Neutral */
+
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  margin: 5rem 0 3.5rem 0;
+}
+
+.card {
+  background-color: var(--White);
+  width: 100%;
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2.5rem;
+  gap: 3rem;
+}
+
+.input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.input .label-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 0;
+}
+
+.input .label-wrapper label {
+  color: var(--Dark-grayish-cyan);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.error-msg {
+  color: indianred;
+  font-weight: 700;
+  font-size: 1.5rem;
+  opacity: 0;
+}
+
+.show-error-msg {
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+
+.inp-text {
+  background-color: var(--Very-light-grayish-cyan);
+  border: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  color: var(--Very-dark-cyan);
+  font-family: "Space Mono", monospace;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: right;
+  padding: 0.5rem 2.4rem;
+}
+
+.inp-text:focus {
+  outline: none;
+  border: 2px solid var(--Strong-cyan);
+}
+
+.output {
+  background-color: var(--Very-dark-cyan);
+  width: 100%;
+}
+
+.inp-wrapper {
+  position: relative;
+}
+
+.inp-wrapper img {
+  position: absolute;
+  left: 2.4rem;
+  top: 1.5rem;
+}
+
+.btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 1.2rem;
+}
+
+.btn-wrapper .btn {
+  width: 46%;
+  text-align: center;
+  background-color: var(--Very-dark-cyan);
+  color: var(--White);
+  font-size: 2.4rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding: 0.6rem 0;
+  transition: all 0.5s ease;
+}
+
+.btn-wrapper .btn:hover {
+  background-color: var(--Strong-cyan);
+}
+
+.btn-active {
+  background-color: var(--Strong-cyan);
+  color: var(--Very-dark-cyan);
+}
+
+.inp-text {
+  width: 46%;
+}
+
+.output {
+  background-color: var(--Very-dark-cyan);
+  width: 100%;
+  border-radius: 1.5rem;
+  padding: 2.2rem;
+}
+
+.line-wrapper .line-output {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.4rem 0 2.4rem 0;
+}
+
+.title {
+  color: var(--White);
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.desc {
+  color: var(--Dark-grayish-cyan);
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.line-wrapper .value {
+  color: var(--Strong-cyan);
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.output .btn {
+  width: 100%;
+  background-color: var(--Strong-cyan);
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--Very-dark-cyan);
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding: 1rem 0;
+  margin-top: 3.4rem;
+  transition: all 0.5s ease;
+}
+
+.output .btn:hover {
+  background-color: var(--Strong-cyan);
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 64%;
+    flex-direction: row;
+    border-radius: 2.5rem;
+    align-items: stretch;
+    padding: 3.4rem;
+    gap: 1.5rem;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05),
+      0px 20px 30px rgba(0, 0, 0, 0.05);
+  }
+
+  .input {
+    width: 105%;
+    padding: 0 3.5rem 1.5rem 1.5rem;
+  }
+
+  .label-wrapper {
+    padding: 1rem 0;
+  }
+
+  .btn-wrapper .btn,
+  .inp-text {
+    width: 30.5%;
+  }
+
+  .output {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem;
+  }
+
+  .line-output {
+    margin: 0.5rem 0 2.4rem 0;
+  }
+
+  .line-output .value {
+    font-size: 4.6rem;
+  }
+}
