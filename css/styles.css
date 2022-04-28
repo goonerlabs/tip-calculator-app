@@ -43,7 +43,7 @@ body {
 
 .card {
   background-color: var(--White);
-  width: 100%;
+   max-width: 55%;
   border-top-left-radius: 2.5rem;
   border-top-right-radius: 2.5rem;
   display: flex;
