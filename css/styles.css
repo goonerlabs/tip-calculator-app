@@ -89,7 +89,7 @@ body {
 .inp-text {
   background-color: var(--Very-light-grayish-cyan);
   border: none;
-  width: 100%;
+  width: 100% !important;
   border-radius: 0.5rem;
   color: var(--Very-dark-cyan);
   font-family: "Space Mono", monospace;
