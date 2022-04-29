@@ -140,7 +140,7 @@ body {
 }
 @media screen and (max-width: 376px) {
   .btn-wrapper .btn {
-    gap: 2.5rem !important;
+    
     margin: 1.5rem;
   }
 }
