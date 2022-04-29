@@ -98,7 +98,20 @@ body {
   text-align: right;
   padding: 0.5rem 2.4rem;
 }
+.inp-text-custom{
 
+    background-color: var(--Very-light-grayish-cyan);
+    border: none;
+    width: 45% !important;
+    border-radius: 0.5rem;
+    color: var(--Very-dark-cyan);
+    font-family: "Space Mono", monospace;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: right;
+    padding: 0.5rem 2.4rem;
+  
+}
 .inp-text:focus {
   outline: none;
   border: 2px solid var(--Strong-cyan);
