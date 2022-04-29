@@ -43,7 +43,7 @@ body {
 
 .card {
   background-color: var(--White);
-   max-width: 55%;
+   max-width: 100%;
   border-top-left-radius: 2.5rem;
   border-top-right-radius: 2.5rem;
   display: flex;
@@ -139,6 +139,7 @@ body {
   padding: 0.6rem 0;
   transition: all 0.5s ease;
 }
+
 
 .btn-wrapper .btn:hover {
   background-color: var(--Strong-cyan);
