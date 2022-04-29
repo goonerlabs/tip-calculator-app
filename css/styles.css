@@ -43,7 +43,7 @@ body {
 
 .card {
   background-color: var(--White);
-   max-width: 100%;
+  max-width: 100%;
   border-top-left-radius: 2.5rem;
   border-top-right-radius: 2.5rem;
   display: flex;
@@ -98,19 +98,17 @@ body {
   text-align: right;
   padding: 0.5rem 2.4rem;
 }
-.inp-text-custom{
-
-    background-color: var(--Very-light-grayish-cyan);
-    border: none;
-    width: 45% !important;
-    border-radius: 0.5rem;
-    color: var(--Very-dark-cyan);
-    font-family: "Space Mono", monospace;
-    font-size: 2.4rem;
-    font-weight: 700;
-    text-align: right;
-    padding: 0.5rem 2.4rem;
-  
+.inp-text-custom {
+  background-color: var(--Very-light-grayish-cyan);
+  border: none;
+  width: 45% !important;
+  border-radius: 0.5rem;
+  color: var(--Very-dark-cyan);
+  font-family: "Space Mono", monospace;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: right;
+  padding: 0.5rem 2.4rem;
 }
 .inp-text:focus {
   outline: none;
@@ -140,9 +138,10 @@ body {
   gap: 1rem;
   padding-top: 1.2rem;
 }
-@media screen and (max-width: 376px){
-  .btn-wrapper{
+@media screen and (max-width: 376px) {
+  .btn-wrapper .btn {
     gap: 2.5rem !important;
+    margin: 1.5rem;
   }
 }
 
@@ -157,7 +156,6 @@ body {
   padding: 0.6rem 0;
   transition: all 0.5s ease;
 }
-
 
 .btn-wrapper .btn:hover {
   background-color: var(--Strong-cyan);
